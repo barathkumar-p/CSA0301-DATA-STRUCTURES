@@ -9,9 +9,7 @@ class BinaryTree:
         self.root = Node(root)
 
     def inorder_traversal(self, start, traversal):
-        """
-        In-Order Traversal: left child -> root -> right child
-        """
+        
         if start:
             traversal = self.inorder_traversal(start.left, traversal)
             traversal += (str(start.value) + "->")
@@ -19,9 +17,7 @@ class BinaryTree:
         return traversal
 
     def preorder_traversal(self, start, traversal):
-        """
-        Pre-Order Traversal: root -> left child -> right child
-        """
+       
         if start:
             traversal += (str(start.value) + "->")
             traversal = self.preorder_traversal(start.left, traversal)
@@ -29,9 +25,7 @@ class BinaryTree:
         return traversal
 
     def postorder_traversal(self, start, traversal):
-        """
-        Post-Order Traversal: left child -> right child -> root
-        """
+       
         if start:
             traversal = self.postorder_traversal(start.left, traversal)
             traversal = self.postorder_traversal(start.right, traversal)

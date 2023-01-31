@@ -7,6 +7,8 @@ for i in range(r1):
     for j in range(c1):
         x=int(input())
         A[i][j]=x
+
+
 r2=int(input("Enter number of Rows of Matrix B: "))
 c2=int(input("Enter number of Columns of Matrix B: "))
 B=[[0 for i in range(c2)] for j in range(r2)] #initialize matrix B
@@ -16,6 +18,8 @@ for i in range(r2):
     for j in range(c2):
         x=int(input())
         B[i][j]=x
+
+        
 if(c1==r2): #if no. of columns of matrix A is equal to no. of rows of matrix B
     P=[[0 for i in range(c2)] for j in range(r1)] #initialize product matrix
     for i in range(len(A)):

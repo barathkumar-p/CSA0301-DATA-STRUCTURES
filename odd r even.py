@@ -1,16 +1,23 @@
 def CountingEvenOdd(arr, arr_size):
-	even_count = 0
-	odd_count = 0
 	for i in range(arr_size):
-		if (arr[i] & 1 == 1):
-			odd_count += 1
+		if (arr[i] % 2 == 0):
+			evenlist.append(arr)
+						
 		else:
-			even_count += 1
-	print("Number of even elements = ",
-		even_count)
-	print("Number of odd elements = ",
-		odd_count)
-arr = [2, 3, 4, 5, 6]
+			oddlist.append(arr)
+			
+
+
+	print(" even elements = ",evenlist)
+	print("odd elements = ",oddlist)
+
+evenlist=[]
+oddlist=[]
+
+arr =[]
+n=int(input("ENter num of elemts:"))
+for i in range(n):
+	arr.append(int(input("Enter the elements:")))
 n = len(arr)
 CountingEvenOdd(arr, n)
 

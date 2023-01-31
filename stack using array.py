@@ -25,7 +25,7 @@ class StackUsingArray:
 #Driver code for pro players only :), BTY it is noob friendly.
 if __name__ == "__main__":
     s = StackUsingArray()
-    print("*"*5+" Stack Using Array HolyCoders.com "+5*"*")
+    
     while(True):
         el = int(input("1 for Push\n2 for Pop\n3 to check if it is Empty\n4 to print Stack\n5 to exit\n"))
         if(el == 1):
